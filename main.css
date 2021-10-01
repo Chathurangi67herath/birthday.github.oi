@@ -1,0 +1,142 @@
+body{
+    background-color: black;
+}
+.large{
+    display:flex;
+    
+}
+.left{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(180, 169, 173); 
+    border-radius: 20px;
+    margin-right: 5px; 
+    animation-name: pp;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    position: relative;
+}
+@keyframes pp{
+    from{}
+    to  {background-color: black;
+         transform: rotate(360deg);
+         height: 0px;
+        }
+}
+
+.lin{
+color:rgb(255, 8, 90);
+font-weight: bold;
+font-size: 75px;
+text-align: center;
+text-shadow:10px 3px 5px black;
+line-height: 25px;
+animation-name: new;
+animation-duration: 10s;
+animation-delay: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes new{
+    0% {color: white; }
+    25%{color:rgb(255, 8, 90);position: absolute; left:100px;}
+    50%{color: white ;}
+    75%{color:rgb(255, 8, 90);position: absolute; left:250px;}}
+
+.right{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 600px;
+    background-color: rgb(201, 170, 181); 
+    border-radius: 20px;
+    margin-right: 5px; 
+    animation-name: cc;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    position: relative;
+}
+@keyframes cc{
+    from{}
+    to{background-color: black;
+       transform: rotate(360deg);
+       height: 0px;
+      }
+}
+.rin{
+    color:rgb(255, 8, 90);
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    text-shadow:10px 3px 5px black;
+    line-height: 25px;
+    animation-name: ne;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes ne{
+    0% {color: white; }
+    25%{color:rgb(255, 8, 90);position: absolute; left:30px;}
+    50%{color: white ;}
+    75%{color:rgb(255, 8, 90);position: absolute; left:120px;}}
+
+
+    
+.middle{
+        width: 800px;
+        height: 600px;
+        background-image: url('media/all.jpg');
+        background-size: cover;
+        border-radius: 20px;
+        margin-right: 5px;
+        animation-name: abc;
+        animation-duration: 8s;
+        animation-timing-function: linear;
+}
+@keyframes abc{
+        from{
+            background-image: url('media/ros.jpg');
+            background-size: cover;
+            height: 0px;
+            width: 0px;
+            position:absolute;
+            top:250px;
+            left:600px;
+            }
+        to{
+            background-image: url('media/ros.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:500px;
+        }
+    }
+
+.min{
+        color:black;
+        font-weight: bold;
+        font-size: 50px;
+        text-shadow:10px 3px white;
+        line-height: 5px;
+        margin-top: 500px;
+        margin-left: 150px;
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count:infinite;
+        animation-delay: 7s;
+}
+@keyframes example {
+        from{ width:500px;}
+        to{color:rgb(255, 8, 90);
+            font-size: 75px;
+            margin-top: 250px;
+            margin-left: 30px;
+            width: 600px;
+            position: absolute;
+            text-shadow:10px 3px black; }
+}
